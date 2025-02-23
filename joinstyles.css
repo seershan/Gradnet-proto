@@ -1,0 +1,534 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header and Navigation */
+/* header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    margin-top: 0px;
+  } */
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    font-size: 34px;
+    font-weight: bold;
+    color: #0066cc;
+    text-decoration: none;
+    margin-left: 80px;
+  }
+  #logo {
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+#logo-text {
+    margin-left: -5px;
+    margin-top: 5px;
+}
+  #cta-button1 {
+    margin-right: 100px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-left: 30px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover, .nav-links a.active {
+    color: #0066cc;
+  }
+  
+  .cta-button {
+    background-color: #0066cc;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0052a3;
+  }
+/* Join Hero Section */
+#join-hero {
+    background-color: #f0f8ff;
+    padding: 120px 0 60px;
+    text-align: center;
+}
+
+#join-hero h1 {
+    font-size: 48px;
+    color: #0066cc;
+    margin-bottom: 20px;
+}
+
+#join-hero p {
+    font-size: 20px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Join Form Section */
+#join-form {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+#join-form h2 {
+    font-size: 36px;
+    color: #0066cc;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.membership-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-button {
+    background-color: #0066cc;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0052a3;
+}
+
+/* Membership Benefits Section */
+#membership-benefits {
+    padding: 60px 0;
+    background-color: #f0f8ff;
+}
+
+#membership-benefits h2 {
+    font-size: 36px;
+    color: #0066cc;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.benefits-list {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.benefits-list li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.benefits-list li i {
+    color: #0066cc;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ffd700;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffd700;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #join-hero h1 {
+        font-size: 36px;
+    }
+
+    #join-hero p {
+        font-size: 18px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-right: 0;
+    }
+}
+
+/* Registration Form Styles */
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e40af;
+    --success-color: #10b981;
+    --error-color: #ef4444;
+    --background-color: #f8fafc;
+    --text-color: #1f2937;
+    --border-color: #e2e8f0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.registration-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    padding: 2rem;
+}
+
+/* Progress Bar Styles */
+.progress-bar {
+    margin-bottom: 3rem;
+}
+
+.progress-steps {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.progress-steps::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--border-color);
+    z-index: 1;
+}
+
+.step {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.step-number {
+    width: 32px;
+    height: 32px;
+    background: white;
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.step.active .step-number {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.step-title {
+    font-size: 0.875rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+/* Form Styles */
+.form-step {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.form-step.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-field {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.field-hint {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-top: 0.25rem;
+}
+
+/* Navigation Buttons */
+.form-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.next-step,
+.submit-form {
+    background: var(--primary-color);
+    color: white;
+}
+
+.next-step:hover,
+.submit-form:hover {
+    background: var(--secondary-color);
+    transform: translateY(-1px);
+}
+
+.prev-step {
+    background: transparent;
+    border: 2px solid var(--border-color);
+    color: var(--text-color);
+}
+
+.prev-step:hover {
+    background: var(--background-color);
+}
+
+/* Interest Grid */
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.interest-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.interest-item:hover {
+    border-color: var(--primary-color);
+    background: rgba(37, 99, 235, 0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .registration-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .step-title {
+        display: none;
+    }
+
+    .input-group {
+        grid-template-columns: 1fr;
+    }
+
+    .form-navigation {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  
+  h1, h2, h3 {
+    font-weight: 700;
+    letter-spacing: -0.025em;
+  }
+
+  .container h2 {
+    text-decoration: none;
+  }
+
+  .benefits-list {
+    text-decoration: none;
+  }

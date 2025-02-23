@@ -1,0 +1,100 @@
+
+
+/* Profile-specific styles */
+.profile-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 2rem;
+}
+
+.profile-info h1 {
+    font-size: 2.5rem;
+    color: #0066cc;
+    margin-bottom: 0.5rem;
+}
+
+.profile-info p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.profile-section {
+    margin-bottom: 2rem;
+}
+
+.profile-section h2 {
+    font-size: 1.8rem;
+    color: #0066cc;
+    margin-bottom: 1rem;
+}
+
+.experience-item {
+    margin-bottom: 1rem;
+}
+
+.experience-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+}
+
+.experience-item p {
+    color: #666;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: #0066cc;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+#logo {
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+#logo-text {
+    margin-left: -5px;
+    margin-top: 5px;
+}
+.social-links a:hover {
+    color: #0052a3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .profile-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-picture {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}

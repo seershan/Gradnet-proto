@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Now - GradNet</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+    <link rel="stylesheet" href="joinstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+        <nav>
+            <a href="index.html" class="logo" id="logo"><img src="images/logofull.png" alt="GradNet Logo" height="50px"></a>
+            <!-- <a href="index.html" class="logo" id="logo-text">radnet</a> -->
+            <div class="container"></div>
+            <div class="container">
+            </div>
+            <a href="#" id="cta-button1" class="cta-button">Join Now</a>
+        </nav>
+    </header>
+
+    <div class="registration-container">
+        <div class="progress-bar">
+            <div class="progress-steps">
+                <div class="step active" data-step="1">
+                    <div class="step-number">1</div>
+                    <div class="step-title">Personal Info</div>
+                </div>
+                <div class="step" data-step="2">
+                    <div class="step-number">2</div>
+                    <div class="step-title">Education</div>
+                </div>
+                <div class="step" data-step="3">
+                    <div class="step-number">3</div>
+                    <div class="step-title">Professional</div>
+                </div>
+                <div class="step" data-step="4">
+                    <div class="step-number">4</div>
+                    <div class="step-title">Interests</div>
+                </div>
+            </div>
+        </div>
+
+        <form id="registration-form" class="multi-step-form">
+            <!-- Step 1: Personal Information -->
+            <div class="form-step active" data-step="1">
+                <h2>Personal Information</h2>
+                <div class="input-group">
+                    <div class="form-field">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" required>
+                        <div class="field-hint">Enter your legal first name</div>
+                    </div>
+                    <div class="form-field">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" required>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required>
+                    <div class="field-hint">We'll use this for account verification</div>
+                </div>
+                <div class="form-field">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" pattern="[0-9]{10}">
+                </div>
+                <div class="form-navigation">
+                    <button type="button" class="next-step">Continue</button>
+                </div>
+            </div>
+
+            <!-- Step 2: Educational Background -->
+            <div class="form-step" data-step="2">
+                <h2>Educational Background</h2>
+                <div class="form-field">
+                    <label for="graduationYear">Graduation Year</label>
+                    <select id="graduationYear" required>
+                        <!-- Will be populated by JavaScript -->
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="degree">Degree Program</label>
+                    <select id="degree" required>
+                        <option value="">Select your degree</option>
+                        <option value="bachelor">Bachelor's Degree</option>
+                        <option value="master">Master's Degree</option>
+                        <option value="phd">Ph.D.</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="major">Major/Field of Study</label>
+                    <input type="text" id="major" required>
+                </div>
+                <div class="form-navigation">
+                    <button type="button" class="prev-step">Back</button>
+                    <button type="button" class="next-step">Continue</button>
+                </div>
+            </div>
+
+            <!-- Step 3: Professional Information -->
+            <div class="form-step" data-step="3">
+                <h2>Professional Information</h2>
+                <div class="form-field">
+                    <label for="currentCompany">Current Company</label>
+                    <input type="text" id="currentCompany">
+                </div>
+                <div class="form-field">
+                    <label for="jobTitle">Job Title</label>
+                    <input type="text" id="jobTitle">
+                </div>
+                <div class="form-field">
+                    <label for="industry">Industry</label>
+                    <select id="industry">
+                        <option value="">Select your industry</option>
+                        <option value="tech">Technology</option>
+                        <option value="finance">Finance</option>
+                        <option value="healthcare">Healthcare</option>
+                        <!-- More options -->
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="linkedin">LinkedIn Profile</label>
+                    <input type="url" id="linkedin">
+                </div>
+                <div class="form-navigation">
+                    <button type="button" class="prev-step">Back</button>
+                    <button type="button" class="next-step"><a href="index.html">Continue</button>
+                </div>
+            </div>
+
+            <!-- Step 4: Interests and Preferences -->
+            <div class="form-step" data-step="4">
+                <h2>Interests and Preferences</h2>
+                <div class="interests-grid">
+                    <div class="interest-item">
+                        <input type="checkbox" id="mentoring">
+                        <label for="mentoring">Mentoring</label>
+                    </div>
+                    <div class="interest-item">
+                        <input type="checkbox" id="networking">
+                        <label for="networking">Networking Events</label>
+                    </div>
+                    <div class="interest-item">
+                        <input type="checkbox" id="speaking">
+                        <label for="speaking">Speaking Opportunities</label>
+                    </div>
+                    <!-- More interest options -->
+                </div>
+                <div class="form-field">
+                    <label for="bio">Brief Bio</label>
+                    <textarea id="bio" rows="4"></textarea>
+                    <div class="field-hint">Share a brief introduction about yourself</div>
+                </div>
+                <div class="form-navigation">
+                    <button type="button" class="prev-step">Back</button>
+                    <button type="submit" class="submit-form">Complete Registration</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+        <section id="membership-benefits">
+            <div class="container">
+                <h2>Membership Benefits</h2>
+                <ul class="benefits-list">
+                    <li><i class="fas fa-network-wired"></i> Exclusive networking opportunities</li>
+                    <li><i class="fas fa-briefcase"></i> Access to job postings and career resources</li>
+                    <li><i class="fas fa-graduation-cap"></i> Lifelong learning programs and workshops</li>
+                    <li><i class="fas fa-users"></i> Mentorship programs</li>
+                    <li><i class="fas fa-ticket-alt"></i> Discounted tickets to alumni events</li>
+                    <li><i class="fas fa-newspaper"></i> Monthly alumni newsletter</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="events.html">Upcoming Events</a></li>
+                        <li><a href="network.html">Alumni Directory</a></li>
+                        <li><a href="resources.html">Career Resources</a></li>
+                        <li><a href="donation.html">Donations</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="universities.html">Universities</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="ai-profile-generator.html">Profile Generator</a></li>
+                        <li><a href="ai-project-suggestions.html">Project Ideas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: seershanmitra@gmail.com</p>
+                    <p>Phone: +91-8668773914</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GradNet. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="joinscript.js"></script>
+</body>
+</html>

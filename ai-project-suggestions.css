@@ -1,0 +1,142 @@
+/* AI Project Suggestions Styles */
+
+#logo {
+  margin-left: 80px;
+  margin-top: 10px;
+}
+
+#logo-text {
+  margin-left: -5px;
+  margin-top: 5px;
+}
+
+#ai-project-hero {
+  background-color: #f0f8ff;
+  padding: 120px 0 60px;
+  text-align: center;
+}
+
+#ai-project-hero h1 {
+  font-size: 48px;
+  color: #0066cc;
+  margin-bottom: 20px;
+}
+
+#ai-project-hero p {
+  font-size: 20px;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#project-generator {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+#project-generator h2 {
+  font-size: 36px;
+  color: #0066cc;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.project-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.generate-button {
+  background-color: #0066cc;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.generate-button:hover {
+  background-color: #0052a3;
+}
+
+#project-ideas {
+  padding: 60px 0;
+  background-color: #f0f8ff;
+}
+
+#project-ideas h2 {
+  font-size: 36px;
+  color: #0066cc;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.ideas-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.idea-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.idea-card:hover {
+  transform: translateY(-5px);
+}
+
+.idea-card h3 {
+  font-size: 20px;
+  color: #0066cc;
+  margin-bottom: 10px;
+}
+
+.idea-card p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .project-form {
+    padding: 0 20px;
+  }
+
+  .ideas-list {
+    grid-template-columns: 1fr;
+  }
+}
+

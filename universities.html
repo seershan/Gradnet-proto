@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universities - GradNet</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="universities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo" id="logo"><img src="images/logofull.png" alt="GradNet Logo" height="50px"></a>
+            <!-- <a href="index.html" class="logo" id="logo-text">radnet</a> -->
+            <div class="container"></div>
+            <div class="container">
+              
+                <ul class="nav-links">
+                    <li><a href="feed.html">Feed</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="network.html">Network</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="donation.html">Donations</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="universities.html" class="active">Universities</a></li>
+                    <li><a href="ai-profile-generator.html">Profile Generator</a></li>
+                    <li><a href="ai-project-suggestions.html">Project Ideas</a></li>
+
+
+                </ul>
+            </div>
+            <a href="join.html" id="cta-button1" class="cta-button">Join Now</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="universities-hero" class="page-hero">
+            <div class="container">
+                <h1>Partner Universities</h1>
+                <p>Explore our network of prestigious educational institutions</p>
+            </div>
+        </section>
+
+        <section id="universities-grid">
+            <div class="container">
+                <div class="universities-search">
+                    <input type="text" id="searchUniversity" placeholder="Search universities...">
+                </div>
+                <div class="grid">
+                    <div class="university-card" data-id="1">
+                        <img src="images/MIT.jpg" alt="MIT Campus">
+                        <h3>Massachusetts Institute of Technology</h3>
+                        <div class="university-stats">
+                            <p><i class="fas fa-user-graduate"></i> 11,500 Students</p>
+                            <p><i class="fas fa-users"></i> 139,000 Alumni</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Cambridge, MA</p>
+                        </div>
+                    </div>
+                    <div class="university-card" data-id="2">
+                        <img src="images/JSPM.jpeg" alt="JSPM Campus">
+                        <h3>JSPM University</h3>
+                        <div class="university-stats">
+                            <p><i class="fas fa-user-graduate"></i> 2,000 Students</p>
+                            <p><i class="fas fa-users"></i> 4,200 Alumni</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Pune, IN</p>
+                        </div>
+                    </div>
+                    <div class="university-card" data-id="3">
+                        <img src="images/HARVARD.jpg" alt="Harvard Campus">
+                        <h3>Harvard University</h3>
+                        <div class="university-stats">
+                            <p><i class="fas fa-user-graduate"></i> 23,700 Students</p>
+                            <p><i class="fas fa-users"></i> 371,000 Alumni</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Cambridge, MA</p>
+                        </div>
+                    </div>
+                    <div class="university-card" data-id="4">
+                        <img src="images/Stanford.jpg" alt="Stanford Campus">
+                        <h3>Stanford University</h3>
+                        <div class="university-stats">
+                            <p><i class="fas fa-user-graduate"></i> 16,100 Students</p>
+                            <p><i class="fas fa-users"></i> 220,000 Alumni</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Stanford, CA</p>
+                        </div>
+                    </div>
+                    <div class="university-card" data-id="5">
+                        <img src="images/OXFORD.jpg" alt="Oxford Campus">
+                        <h3>University of Oxford</h3>
+                        <div class="university-stats">
+                            <p><i class="fas fa-user-graduate"></i> 24,000 Students</p>
+                            <p><i class="fas fa-users"></i> 350,000 Alumni</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Oxford, UK</p>
+                        </div>
+                    </div>
+                    <div class="university-card" data-id="6">
+                        <img src="images/CAMBRIDGE.jpg" alt="Cambridge Campus">
+                        <h3>University of Cambridge</h3>
+                        <div class="university-stats">
+                            <p><i class="fas fa-user-graduate"></i> 22,000 Students</p>
+                            <p><i class="fas fa-users"></i> 300,000 Alumni</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Cambridge, UK</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- University Details Modal -->
+    <div id="universityModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="universityDetails"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                           <li><a href="feed.html">Feed</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="network.html">Network</a></li>
+                    <li><a href="resources.html" class="active">Resources</a></li>
+                    <li><a href="donation.html">Donations</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="universities.html">Universities</a></li>
+                    <li><a href="ai-profile-generator.html">Profile Generator</a></li>
+                    <li><a href="ai-project-suggestions.html">Project Ideas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: seershanmitra@gmail.com</p>
+                    <p>Phone: +91-8668773914</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GradNet. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="universities.js"></script>
+</body>
+</html>

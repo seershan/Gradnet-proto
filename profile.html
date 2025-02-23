@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - GradNet</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+    <link rel="stylesheet" href="joinstyles.css">
+    <link rel="stylesheet" href="profile-styles.css">
+    <link rel="stylesheet" href="modal-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="glass-nav">
+            <a href="index.html" class="logo" id="logo"><img src="images/logofull.png" alt="GradNet Logo" height="50px"></a>
+            <!-- <a href="index.html" class="logo" id="logo-text">radnet</a> -->
+            <div class="container"></div>
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="feed.html">Feed</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="network.html">Network</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="donation.html">Donations</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="universities.html">Universities</a></li>
+                    <li><a href="ai-profile-generator.html">Profile Generator</a></li>
+                    <li><a href="ai-project-suggestions.html">Project Ideas</a></li>
+                </ul>
+            </div>
+            <button id="cta-button1" class="cta-button">Edit Profile</button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="profile-container">
+            <div class="profile-header">
+                <img id="profile-picture" src="/placeholder.svg?height=150&width=150" alt="Profile Picture" class="profile-picture">
+                <div class="profile-info">
+                    <h1 id="user-name">John Doe</h1>
+                    <p id="university-name">University of Technology</p>
+                </div>
+            </div>
+
+            <div class="profile-section">
+                <h2>About Me</h2>
+                <p id="about-me">Passionate software engineer with a focus on web technologies and AI. Always eager to learn and contribute to innovative projects.</p>
+            </div>
+
+            <div class="profile-section">
+                <h2>Experience</h2>
+                <div id="experience-list">
+                    <div class="experience-item">
+                        <h3>Senior Software Engineer - Tech Innovations Inc.</h3>
+                        <p>2020 - Present</p>
+                        <p>Leading development of AI-powered web applications.</p>
+                    </div>
+                    <div class="experience-item">
+                        <h3>Software Developer - StartUp Solutions</h3>
+                        <p>2018 - 2020</p>
+                        <p>Developed and maintained various client-facing web applications.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-section">
+                <h2>Connect</h2>
+                <div id="social-links" class="social-links">
+                    <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Profile</h2>
+            <form id="edit-profile-form">
+                <div class="form-group">
+                    <label for="edit-name">Name:</label>
+                    <input type="text" id="edit-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="edit-university">University:</label>
+                    <input type="text" id="edit-university" required>
+                </div>
+                <div class="form-group">
+                    <label for="edit-about">About Me:</label>
+                    <textarea id="edit-about" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="edit-experience">Experience:</label>
+                    <textarea id="edit-experience" rows="6" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="edit-social">Social Links (comma-separated):</label>
+                    <input type="text" id="edit-social" required>
+                </div>
+                <button type="submit" class="submit-button">Save Changes</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="events.html">Upcoming Events</a></li>
+                        <li><a href="network.html">Alumni Directory</a></li>
+                        <li><a href="resources.html">Career Resources</a></li>
+                        <li><a href="donation.html">Donations</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="universities.html">Universities</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="ai-profile-generator.html">Profile Generator</a></li>
+                        <li><a href="ai-project-suggestions.html">Project Ideas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@gradnet.com</p>
+                    <p>Phone: +91-8668773914</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GradNet. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="profile-script.js"></script>
+</body>
+</html>

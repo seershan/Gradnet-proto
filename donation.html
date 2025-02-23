@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Portal - GradNet</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+    <link rel="stylesheet" href="networkstyles.css">
+    <link rel="stylesheet" href="donationstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+    <header>
+        <nav class="glass-nav">
+            <a href="index.html" class="logo" id="logo"><img src="images/logofull.png" alt="GradNet Logo" height="50px"></a>
+            <!-- <a href="index.html" class="logo" id="logo-text">radnet</a> -->
+            <div class="container"></div>
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="feed.html">Feed</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="network.html">Network</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="donation.html" class="active">Donations</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="universities.html">Universities</a></li>
+                    <li><a href="ai-profile-generator.html">Profile Generator</a></li>
+                    <li><a href="ai-project-suggestions.html">Project Ideas</a></li>
+
+
+                </ul>
+            </div>
+            <a href="join.html" id="cta-button1" class="cta-button">Join Now</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="donation-hero" class="page-hero">
+            <div class="container">
+                <h1>Support GradNet</h1>
+                <p>Your contribution helps us empower graduates and build stronger connections</p>
+            </div>
+        </section>
+
+        <section id="donation-info">
+            <div class="container">
+                <h2>Why Your Donation Matters</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Support Education</h3>
+                        <p>Help fund scholarships and educational programs for deserving students.</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Foster Connections</h3>
+                        <p>Enable us to organize networking events and career fairs for our alumni.</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Improve Technology</h3>
+                        <p>Contribute to the development and maintenance of our online platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="donation-form">
+            <div class="container">
+                <h2>Make a Donation</h2>
+                <form id="donate-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Donation Amount ($)</label>
+                        <input type="number" id="amount" name="amount" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="payment-method">Payment Method</label>
+                        <select id="payment-method" name="payment-method" required>
+                            <option value="">Select a payment method</option>
+                            <option value="credit-card">Credit Card</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="bank-transfer">Bank Transfer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message (Optional)</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="donate-button">Donate Now</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-header">
+            <h3>GradMate</h3>
+            <button id="chatbot-toggle" aria-label="Toggle chatbot">
+                <i class="fas fa-minus"></i>
+            </button>
+        </div>
+        <div id="chatbot-body">
+            <div id="chatbot-messages" class="chatbot-messages"></div>
+            <div id="typing-indicator" class="typing-indicator hidden">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <form id="chatbot-form" class="chatbot-form">
+                <input type="text" id="chatbot-input" placeholder="Type your message..." required>
+                <button type="submit" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="events.html">Upcoming Events</a></li>
+                        <li><a href="network.html">Alumni Directory</a></li>
+                        <li><a href="resources.html">Career Resources</a></li>
+                        <li><a href="donation.html">Donations</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="universities.html">Universities</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="ai-profile-generator.html">Profile Generator</a></li>
+                        <li><a href="ai-project-suggestions.html">Project Ideas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: seershanmitra@gmail.com</p>
+                    <p>Phone: +91-8668773914</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GradNet. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="donationscript.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>

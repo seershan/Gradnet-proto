@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed - GradNet</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+    <link rel="stylesheet" href="feed.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo" id="logo"><img src="images/logofull.png" alt="GradNet Logo" height="50px"></a>
+            <!-- <a href="index.html" class="logo" id="logo-text">radnet</a> -->
+            <div class="container"></div>
+            <div class="container">
+              
+                <ul class="nav-links">
+                    <li><a href="feed.html"class="active">Feed</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="network.html">Network</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="donation.html">Donations</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="universities.html">Universities</a></li>
+                    <li><a href="ai-profile-generator.html">Profile Generator</a></li>
+                    <li><a href="ai-project-suggestions.html">Project Ideas</a></li>
+
+
+                </ul>
+            </div>
+            <a href="profile.html" id="cta-button1" class="cta-button">Profile</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="feed-hero" class="page-hero">
+            <div class="container">
+                <h1>Alumni Feed</h1>
+                <p>Stay connected with your fellow graduates</p>
+            </div>
+        </section>
+
+        <section id="create-post">
+            <div class="container">
+                <h2>Create a Post</h2>
+                <form id="post-form" class="post-form">
+                    <textarea placeholder="What's on your mind?" required></textarea>
+                    <div class="form-actions">
+                        <label for="post-image" class="file-input-label">
+                            <i class="fas fa-image"></i> Add Photo
+                        </label>
+                        <input type="file" id="post-image" accept="image/*" class="file-input">
+                        <button type="submit" class="post-button">Post</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="feed">
+            <div class="container">
+                <div id="posts-container">
+                    <!-- Posts will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-header">
+            <h3>GradMate</h3>
+            <button id="chatbot-toggle" aria-label="Toggle chatbot">
+                <i class="fas fa-minus"></i>
+            </button>
+        </div>
+        <div id="chatbot-body">
+            <div id="chatbot-messages" class="chatbot-messages"></div>
+            <div id="typing-indicator" class="typing-indicator hidden">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <form id="chatbot-form" class="chatbot-form">
+                <input type="text" id="chatbot-input" placeholder="Type your message..." required>
+                <button type="submit" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="events.html">Upcoming Events</a></li>
+                        <li><a href="network.html">Alumni Directory</a></li>
+                        <li><a href="resources.html">Career Resources</a></li>
+                        <li><a href="donation.html">Donations</a></li>
+                        <li><a href="universities.html">Universities</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="universities.html">Universities</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="ai-profile-generator.html">Profile Generator</a></li>
+                        <li><a href="ai-project-suggestions.html">Project Ideas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: seershanmitra@gmail.com</p>
+                    <p>Phone: +91-8668773914</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GradNet. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="feed.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
